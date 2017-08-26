@@ -3,8 +3,8 @@ Para rodar o sistema exporte as seguintes variaveis de ambiente.
 ```
 export PGUSER='seu_user' \
 PGPASSWORD='sua_senha' \
-PGDATABASE='?'
-PGHOST='?'
+PGDATABASE='?' \
+PGHOST='?' \
 PGPORT='?'
 ```
 
