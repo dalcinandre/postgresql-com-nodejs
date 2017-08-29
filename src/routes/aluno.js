@@ -20,9 +20,9 @@ const aluno = deps => {
         next()
       }
     })
-    .put('/aluno/:id', async (req, res, next) => {
+    .put('/aluno', async (req, res, next) => {
       try {
-        res.status(204).json(await db.aluno().update(req.params.id, req.body))
+        res.status(204).json(await db.aluno().update(req.body))
       } catch (err) {
         res.status(500).send(err)
       } finally {

@@ -34,7 +34,7 @@ const aluno = deps => {
         }
       })
     },
-    update: (id, aluno) => {
+    update: aluno => {
       return new Promise(async (resolve, reject) => {
         const client = await con.connect()
         try {
